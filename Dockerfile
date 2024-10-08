@@ -2,7 +2,7 @@ FROM mcr.microsoft.com/dotnet/sdk:7.0 AS builder
 WORKDIR /app
 
 # caches restore result by copying csproj file separately
-COPY sampleapp/*.csproj .
+COPY *.csproj .
 RUN dotnet restore
 
 COPY . .
