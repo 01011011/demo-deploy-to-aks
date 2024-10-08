@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: Demoapp
+  labels:
+    app: Demoapp
+    kubernetes.azure.com/generator: devhub
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: Demoapp
+  template:
+    metadata:
+      labels:
+        app: Demoapp
+    spec:
+      containers:
+        - name: Demoapp
+          image: containernik.azurecr.io/demo:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
