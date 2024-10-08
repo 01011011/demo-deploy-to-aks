@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: Demoapp
+  name: de
   namespace: default
   labels:
     kubernetes.azure.com/generator: devhub
 spec:
   type: LoadBalancer
   selector:
-    app: Demoapp
+    app: de
   ports:
     - protocol: TCP
       port: 80
