@@ -40,7 +40,7 @@ on:
 env:
   ACR_RESOURCE_GROUP: containers-rg
   AZURE_CONTAINER_REGISTRY: containernik
-  CONTAINER_NAME: demo
+  CONTAINER_NAME: demoapp
   CLUSTER_RESOURCE_GROUP: demo-cluster-rg
   CLUSTER_NAME: aks-cluster
   DEPLOYMENT_MANIFEST_PATH: |
